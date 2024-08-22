@@ -1,0 +1,33 @@
+# System Monitoring Dashboard Script
+
+This Bash script monitors various system resources and displays them in a dashboard format. The data refreshes every few seconds, providing real-time insights. You can also call specific sections of the dashboard individually using command-line switches.
+
+## Features
+
+- **Top 10 Applications**: Displays the top 10 applications consuming the most CPU and memory.
+- **Network Monitoring**: Shows concurrent connections, packet drops, and network traffic (MB).
+- **Disk Usage**: Displays disk usage for mounted partitions and highlights those over 80% usage.
+- **System Load**: Shows system load averages and a detailed breakdown of CPU usage.
+- **Memory Usage**: Displays total, used, and free memory, along with swap usage.
+- **Process Monitoring**: Shows the number of active processes and top 5 processes by CPU and memory.
+- **Service Monitoring**: Monitors essential services like `sshd`, `nginx/apache`, `iptables`, etc.
+
+## Usage
+
+### Full Dashboard
+Run the script without arguments to see the complete dashboard:
+```bash
+./monitor.sh
+
+#Individual Sections
+Use the following switches to view specific sections of the dashboard:
+
+-t: Top 10 applications by CPU and memory usage.
+-n: Network monitoring.
+-d: Disk usage.
+-l: System load and CPU breakdown.
+-m: Memory usage.
+-p: Process monitoring.
+-s: Service monitoring.
+
+./monitor.sh -t

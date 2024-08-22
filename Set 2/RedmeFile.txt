@@ -1,0 +1,47 @@
+# Linux Security Audit and Hardening Script
+
+This Bash script automates the security audit and hardening process for Linux servers. It ensures that the server meets stringent security standards by identifying vulnerabilities and implementing corrective measures.
+
+## Features
+
+- User and group audit
+- File and directory permission checks
+- Services audit and validation
+- Firewall and network security checks
+- Public vs private IP identification
+- Security updates and patches management
+- Log monitoring for suspicious activities
+- Server hardening measures (e.g., SSH configuration, bootloader security, IPv6 management)
+- Custom security checks via configuration file
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone  https://github.com/PoojaKadam14/SafeSquid-Labs.git
+
+2. Give execute permissions to the script:
+chmod +x audit_harden.sh
+
+##Usage
+Full Audit and Hardening
+
+Run the script as root to perform the security audit and hardening:
+
+```bash
+sudo ./audit_harden.sh
+
+
+## Make the Script Executable
+Set the appropriate permissions:
+chmod +x audit_harden.sh
+
+
+## Custom Configuration
+Edit the custom_checks.conf file to add custom security checks as per your organization’s policies.
+
+## Reporting and Alerts
+The script generates a report after the audit, summarizing all findings and hardening steps. Optional email alerts can be configured for critical issues.
+
+This setup will help automate and standardize the security audit and hardening across your servers.
+
